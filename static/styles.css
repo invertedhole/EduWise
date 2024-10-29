@@ -1,0 +1,177 @@
+ :root {
+ --primary-color: #87CEEB;
+ --secondary-color: #B0E0E6;
+ --font-family: 'Montserrat', sans-serif;
+ --font-size:16px;
+ --line-height:1.5;
+ --max-width:1200px;
+}
+
+* {
+ box-sizing: border-box;
+ margin:0;
+ padding:0;
+}
+
+body {
+ font-family: var(--font-family);
+ font-size: var(--font-size);
+ line-height: var(--line-height);
+ color: #333;
+ background-color: var(--primary-color);
+}
+
+header {
+ background-color: var(--secondary-color);
+ color: #fff;
+ padding:1em0;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+h1 {
+ font-size:2rem;
+ margin:0;
+ padding:0;
+}
+
+main {
+ max-width: var(--max-width);
+ margin:0 auto;
+ padding:2em;
+ background-color: #fff; /* changed background color to #fff */
+ box-shadow:02px5px rgba(0,0,0,0.1);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+section {
+ margin-bottom:2em;
+ padding:1em;
+ border:1px solid #ddd;
+ border-radius:5px;
+ background-color: #fff; /* changed background color to #fff */
+}
+
+/* Content Styles */
+.content {
+ padding:1em;
+ border:1px solid #ddd;
+ border-radius:5px;
+ background-color: #fff; /* changed background color to #fff */
+ text-align: center;
+}
+
+.content h2 {
+ margin-top:0;
+ font-size:1.5rem;
+}
+
+/* Button Styles */
+button {
+ background-color: #7B68EE;
+ color: white;
+ padding:10px20px;
+ border: none;
+ border-radius:5px;
+ cursor: pointer;
+ width:100%;
+ font-size:1rem;
+ transition: background-color0.3s ease;
+}
+
+button:hover {
+ background-color: #663399;
+}
+
+/* EduWise Chatbot Styles */
+.eduwise-chatbot {
+ background-color: #C0C0C0;
+ padding:1em;
+ border:1px solid #ddd;
+ border-radius:5px;
+}
+
+/* Form Styles */
+form {
+ margin-bottom:2em;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+label {
+ display: block;
+ margin-bottom:5px;
+ font-size:1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+ width:100%;
+ padding:10px;
+ margin-bottom:15px;
+ border:1px solid #ccc;
+ border-radius:5px;
+ font-size:1rem;
+}
+
+/* Table Styles */
+table {
+ width:100%;
+ border-collapse: collapse;
+ margin-bottom:2em;
+}
+
+th, td {
+ border:1px solid #ddd;
+ padding:8px;
+ text-align: left;
+ font-size:1rem;
+}
+
+th {
+ background-color: #f0f0f0;
+}
+
+/* Footer Styles */
+footer {
+ background-color: var(--primary-color);
+ color: #fff;
+ padding:1em0;
+ text-align: center;
+ position: sticky;
+ bottom:0;
+ width:100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/* Media Queries */
+@media screen and (max-width:1200px) {
+ main {
+ padding:1em;
+ }
+}
+
+@media screen and (max-width:900px) {
+ main {
+ padding:0.5em;
+ }
+}
+
+@media screen and (max-width:600px) {
+ main {
+ padding:0.2em;
+ }
+}
+
+@media screen and (max-width:400px) {
+ /* add more breakpoints for smaller screens */
+}
